@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  background-color: #FF5A5F;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+/* white background */
+.main-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+/* navigation bar formatting */
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+
+  width: 550px;
+  height: 70px;
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  max-width: 85px;
+}
+
+/* hero section formatting */
+.photo-hero {
+  margin-left: 77px;
+  margin-top: 26px;
+  width: 396px;
+}
+
+.title-hero {
+  margin-left: 36px;
+  margin-top: 32px;
+  font-size: 36px;
+  line-height: 110%;
+}
+
+.descr-hero {
+  margin-left: 36px;
+  width: 320px;
+  line-height: 120%;
+  color: #222222;
+}
+
+/* formatting each card */
+.card {
+  position: relative;
+  width: 180px;
+  font-size: 12px;
+  margin: 18px;
+  flex: 0 0 auto;
+}
+
+.card-img {
+  width: 100%;
+  height: 235px;
+  border-radius: 9px;
+  display: block;
+}
+
+.card-stats {
+  display: flex;
+  align-items: center;
+}
+
+.stats-margin {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.card-title {
+  margin-top: 0px;
+}
+
+.card-star {
+  width: 14px;
+}
+
+.card-badge {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  background-color: white;
+  padding: 5px 6px;
+  border-radius: 2px;
+
+  font-weight: bold;
+}
+
+/* cards horizontal scrolling */
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 20px;
+  width: 550px;
+}
+
+/* footer format */
+small {
+  padding: 10px;
+  align-self: center;
 }
